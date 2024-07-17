@@ -38,6 +38,42 @@ a:hover {
     font-family:Tan Pearl;
     height: 180px;
 }
+@media (max-width: 500px) {
+  .barra-de-navegacion {
+    height: auto;
+    padding: 20px;
+
+  }
+  .imagenes-principales{
+    width: 150px;
+  }
+  .foto-del-patron{
+    width: 150px;
+    height: 10px;
+  }
+  .contenedor-principal{
+  
+    padding: 20px;
+  }
+  .bienvenida{
+    width: 100%;
+  }
+  .contenedor-secundario{
+   
+    padding: 20px;
+  }
+  .texto{
+    font-size: 2px;
+    width: 1%;
+    padding: 2%;
+    margin: 15%;
+  }
+  .image-container img{
+   
+  }
+}
+ 
+
 
 .foto-del-patron{
    

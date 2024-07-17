@@ -1,50 +1,103 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.color-selector {
+  margin-bottom: 20px;
+}
+
+.color-selector label {
+  margin-right: 10px;
+}
+
+.bag-preview {
+  margin-top: 20px;
+}
+
+#bagImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.barra-de-navegacion {
+  background-color: #e6c79e;
+  text-align: center;
+  font-family: Tan Pearl;
+  height: 180px;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  .barra-de-navegacion {
+    height: auto;
     padding: 20px;
   }
-  
-  .color-selector {
-    margin-bottom: 20px;
-  }
-  
-  .color-selector label {
-    margin-right: 10px;
-  }
-  
-  .bag-preview {
-    margin-top: 20px;
-  }
-  
-  #bagImage {
-    max-width: 300px;
+
+  .logo {
+    height: 2.5cm;
   }
 
-  .barra-de-navegacion{
-    background-color: #e6c79e;
-    text-align: center;
-    
-    font-family:Tan Pearl;
-    height: 180px;
+  a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
-.logo{
-    height: 3.5cm;
-}
-a{
 
-    text-decoration: none; /* Remove underline from links */
-  color: #40311d; /* Set text color */
-  font-size: 16px; /* Define font size */
-  padding: 10px 20px; /* Set button padding */
-  background-color: 
-  #f6ecdf
+@media (max-width: 480px) {
+  .barra-de-navegacion {
+    padding: 15px;
+  }
 
-  
-  ; /* Set background color */
-  border: 1px solid #40311d; /* Define button borders */
-  border-radius: 5px; /* Set rounded corners */
+.logo {
+  height: 3.5cm;
+  max-width: 100%;
+  height: auto;
 }
+
+a {
+  text-decoration: none;
+  color: #40311d;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #f6ecdf;
+  border: 1px solid #40311d;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 a:hover {
-    background-color: #7199c4; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+  background-color: #7199c4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .barra-de-navegacion {
+    height: auto;
+    padding: 20px;
   }
+
+  .logo {
+    height: 2.5cm;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .barra-de-navegacion {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 2cm;
+  }
+
+  a {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
