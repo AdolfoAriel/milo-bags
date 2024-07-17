@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .color-selector {
+    margin-bottom: 20px;
+  }
+  
+  .color-selector label {
+    margin-right: 10px;
+  }
+  
+  .bag-preview {
+    margin-top: 20px;
+  }
+  
+  #bagImage {
+    max-width: 300px;
+  }
+
+  .barra-de-navegacion{
+    background-color: #e6c79e;
+    text-align: center;
+    
+    font-family:Tan Pearl;
+    height: 180px;
+}
+.logo{
+    height: 3.5cm;
+}
+a{
+
+    text-decoration: none; /* Remove underline from links */
+  color: #40311d; /* Set text color */
+  font-size: 16px; /* Define font size */
+  padding: 10px 20px; /* Set button padding */
+  background-color: 
+  #f6ecdf
+
+  
+  ; /* Set background color */
+  border: 1px solid #40311d; /* Define button borders */
+  border-radius: 5px; /* Set rounded corners */
+}
+a:hover {
+    background-color: #7199c4; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }

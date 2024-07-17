@@ -1,0 +1,119 @@
+.contenedor-principal{
+    background-color:#fffaef;
+    text-align: center;
+    
+}
+a{
+
+    text-decoration: none; /* Remove underline from links */
+  color: #40311d; /* Set text color */
+  font-size: 16px; /* Define font size */
+  padding: 10px 20px; /* Set button padding */
+  background-color: 
+  #f6ecdf
+
+  
+  ; /* Set background color */
+  border: 1px solid #40311d; /* Define button borders */
+  border-radius: 5px; /* Set rounded corners */
+}
+a:hover {
+    background-color: #7199c4; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+.logo{
+    height: 3.5cm;
+}
+
+.contenedor-secundario{
+    background-color:#fffaef;
+    text-align: center;
+   
+ 
+}
+.barra-de-navegacion{
+    background-color: #e6c79e;
+    text-align: center;
+    
+    font-family:Tan Pearl;
+    height: 180px;
+}
+
+.foto-del-patron{
+   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    border-radius: 4000px;
+   padding-bottom: 3cm;
+    height: 100vh;
+}
+.bienvenida{
+    padding: 8cm;
+    
+}
+.texto{
+    margin: auto;
+    width: 50%;
+   
+    padding: 120px;
+    font-size: 40px;
+}
+footer{
+    font-size: 14px;
+    color: #ffffff;
+    background-color:#ab834d
+    ;
+    margin-top: 5px;
+    padding: 15px;
+    
+}
+.icono {
+    display: inline-block;
+    width: 40px; /* Ancho del icono */
+    height: 40px; /* Alto del icono */
+    overflow: hidden; /* Para recortar la imagen si es necesario */
+     /* Hacerlo circular si la imagen lo permite */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+    padding: 0%;
+    background-color: #ab834d;
+    border-color: #ab834d;
+  }
+  
+  .icono img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto;
+  }
+  .icono:hover {
+    transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
+  }
+
+
+
+  /* IMAGENES DE LOS BORDADOS*/
+  .image-container {
+    position:relative;
+   left: 12cm;
+    width: 50%;
+    height: 100vh; /* Tamaño completo de la ventana */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+   
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    opacity: 0;
+    transition: opacity 1s ease; /* Transición suave de opacidad */
+  }
+  
+  .image-container img.active {
+    opacity: 1;
+  }
+ 
