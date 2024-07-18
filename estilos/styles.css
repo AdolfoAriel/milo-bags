@@ -3,6 +3,9 @@
     text-align: center;
     
 }
+.imagenes-principales{
+  width: 50%;
+}
 a{
 
     text-decoration: none; /* Remove underline from links */
@@ -38,35 +41,33 @@ a:hover {
     font-family:Tan Pearl;
     height: 180px;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .barra-de-navegacion {
     height: auto;
     padding: 20px;
 
   }
   .imagenes-principales{
-    width: 150px;
+    width: 50%;
   }
   .foto-del-patron{
     width: 150px;
     height: 10px;
   }
   .contenedor-principal{
+  width: auto;
+    padding: 20px;
+  }
   
-    padding: 20px;
-  }
-  .bienvenida{
-    width: 100%;
-  }
   .contenedor-secundario{
+   width: auto;
    
-    padding: 20px;
   }
   .texto{
-    font-size: 2px;
-    width: 1%;
-    padding: 2%;
-    margin: 15%;
+    width:auto;
+    margin: auto;
+
+    color: #0e6cd1;
   }}
  
 
@@ -77,9 +78,9 @@ a:hover {
     margin-right: auto;
     text-align: center;
     display: block;
-    border-radius: 4000px;
    padding-bottom: 3cm;
-    height: 100vh;
+    height: 30%; 
+    width: 30%;
 }
 .bienvenida{
     padding: 8cm;
@@ -87,10 +88,8 @@ a:hover {
 }
 .texto{
     margin: auto;
-    width: 50%;
-   
-    padding: 120px;
-    font-size: 40px;
+    width: auto;
+    font-size:xx-large;
 }
 footer{
     font-size: 14px;
@@ -127,8 +126,8 @@ footer{
   /* IMAGENES DE LOS BORDADOS*/
   .image-container {
     position:relative;
-   left: 12cm;
-    width: 50%;
+    width: 60%;
+    margin: auto;
     height: 100vh; /* Tamaño completo de la ventana */
     overflow: hidden; /* Oculta cualquier desbordamiento */
    
