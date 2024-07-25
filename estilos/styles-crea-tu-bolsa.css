@@ -42,6 +42,10 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+.color{
+  max-width: 50%;
+  height: auto;
+}
 
 .barra-de-navegacion {
   background-color: #e6c79e;
@@ -122,5 +126,45 @@ a:hover {
     font-size: 12px;
     padding: 6px 12px;
   }
+  .icono{
+    width: auto;
+
+  }
+  .icono img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto;
+  }
 }
+}
+
+
+
+footer{
+  font-size: 14px;
+  color: #ffffff;
+  background-color:#ab834d
+  ;
+  margin-top: 5px;
+  padding: 15px;
+  
+}
+.icono {
+  display: inline-block;
+  width: 40px; /* Ancho del icono */
+  height: 40px; /* Alto del icono */
+  overflow: hidden; /* Para recortar la imagen si es necesario */
+   /* Hacerlo circular si la imagen lo permite */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  padding: 0%;
+  background-color: #ab834d;
+  border-color: #ab834d;
+}
+
+.icono img {
+  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+  height: auto;
+}
+.icono:hover {
+  transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
 }

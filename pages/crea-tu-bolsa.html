@@ -6,6 +6,13 @@
     <link href="/estilos/styles-crea-tu-bolsa.css" rel="stylesheet">
     <link href="imagenes/miloicon.ico" rel="shortcut icon">
     <title>MiloBagsMx</title>
+    <style>
+      #imagen, #imagen2{
+          width: 300px;
+          height: 300px;
+          border: 1px solid #000;
+      }
+  </style>
 </head>
 <body>
     <nav class="barra-de-navegacion"><img alt="logo" src="/imagenes/log-milo.png" class="logo">
@@ -19,19 +26,66 @@
       
   
         <div class="color-selector">
-          <label for="color1">Color 1:</label>
-          <input type="color" id="color1" name="color1">
-      
-          <label for="color2">Color 2:</label>
-          <input type="color" id="color2" name="color2">
+
+          <label for="colorSelect">Elige un color:</label>
+
+          <select id="colorSelect" name="colorSelect">
+              <option value="Aqua">Aqua</option>
+              <option value="Azulcielo">Azul cielo</option>
+              <option value="Azulneblina">Azul neblina</option>
+              <option value="Bugambilia">Bugambilia</option>
+              <option value="Camel">Camel</option>
+              <option value="Chedron">Chedron</option>
+              <option value="Durazno">Durazno</option>
+              <option value="Ivory">Ivory</option>
+              <option value="Lila">Lila</option>
+              <option value="Listonsuelto">Listón suelto</option>
+              <option value="Magenta">Magenta</option>
+              <option value="Mostaza">Mostaza</option>
+              <option value="Nude">Nude</option>
+              <option value="Paloderosa">Palo de rosa</option>
+              <option value="Rojo">Rojo</option>
+              <option value="Rosapastel">Rosa pastel</option>pages/crea-tu-bolsa.html
+              <option value="Sepia">Sepia</option>
+              <option value="TyeDie">Tye-Die</option>
+              <option value="Vainilla">Vainilla</option>
+              <option value="Verdeolivo">Verde olivo</option>
+          </select>
+
+
+          <label for="colorSelect2">Elige un color:</label>
+          <select id="colorSelect2" name="colorSelect2">
+            <option value="Aqua">Aqua</option>
+            <option value="Azulcielo">Azul cielo</option>
+            <option value="Azulneblina">Azul neblina</option>
+            <option value="Bugambilia">Bugambilia</option>
+            <option value="Camel">Camel</option>
+            <option value="Chedron">Chedron</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Lila">Lila</option>
+            <option value="Listonsuelto">Listón suelto</option>
+            <option value="Magenta">Magenta</option>
+            <option value="Mostaza">Mostaza</option>
+            <option value="Nude">Nude</option>
+            <option value="Paloderosa">Palo de rosa</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Rosapastel">Rosa pastel</option>pages/crea-tu-bolsa.html
+            <option value="Sepia">Sepia</option>
+            <option value="TyeDie">Tye-Die</option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Verdeolivo">Verde olivo</option>
+        </select>
         </div>
-      
-        <div class="bag-preview">
-          <img id="bagImage" src="/imagenes/bolsa_default.png" alt="Imagen de la bolsa">
-        </div>
-      
-        <script src="/crea.js"></script>
+
+        <div class="bad-preview">
+          <img id="imagen" src="" alt="Imagen del color seleccionado">
+          <img id="imagen2" src="" alt="Imagen del color seleccionado">
+      </div>
+        
 
     </div>
+    <script src="/funciones/crea.js"></script>
 </body>
+<script src="/funciones/crea.js"></script>
 </html>
