@@ -1,10 +1,11 @@
 .contenedor-principal{
-    background-color:#fffaef;
+    background-color:white;
     text-align: center;
     
 }
-.imagenes-principales{
-  width: 50%;
+
+.links{
+  padding: 20px;
 }
 a{
 
@@ -17,29 +18,39 @@ a{
 
   
   ; /* Set background color */
-  border: 1px solid #40311d; /* Define button borders */
+   /* Define button borders */
   border-radius: 5px; /* Set rounded corners */
 }
 a:hover {
     background-color: #7199c4; /* Change background color on hover */
     color: #fff; /* Change text color on hover */
   }
-.logo{
-    height: 3.5cm;
+
+
+
+.quienes-somos{
+  text-align: center;
+  color: #e6c79e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 3cm;
+  padding: 40px;
 }
 
 .contenedor-secundario{
-    background-color:#fffaef;
+    background-color: white;
     text-align: center;
-   
- 
+}
+.titulo{
+  font-size: 70px;
+  color: whitesmoke;
+  padding: 0;
 }
 .barra-de-navegacion{
     background-color: #e6c79e;
     text-align: center;
     
     font-family:Tan Pearl;
-    height: 180px;
+
 }
 @media (max-width: 480px) {
   .barra-de-navegacion {
@@ -87,6 +98,7 @@ a:hover {
     
 }
 .texto{
+  padding: 10%;
     margin: auto;
     width: auto;
     font-size:xx-large;
@@ -94,7 +106,7 @@ a:hover {
 footer{
     font-size: 14px;
     color: #ffffff;
-    background-color:#ab834d
+    background-color:#3f2f0e
     ;
     margin-top: 5px;
     padding: 15px;
@@ -106,11 +118,13 @@ footer{
     height: 40px; /* Alto del icono */
     overflow: hidden; /* Para recortar la imagen si es necesario */
      /* Hacerlo circular si la imagen lo permite */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+   /* Sombra suave */
     transition: transform 0.3s ease; /* Transición suave al hacer hover */
     padding: 0%;
-    background-color: #ab834d;
-    border-color: #ab834d;
+    background-color: #3f2f0e;
+    border-color: #3f2f0e;
+    text-align: center;
+
   }
   
   .icono img {
@@ -130,10 +144,12 @@ footer{
     margin: auto;
     height: 100vh; /* Tamaño completo de la ventana */
     overflow: hidden; /* Oculta cualquier desbordamiento */
-   
+   background-color: #f6ecdf;
+  margin-bottom: 50px;
   }
   
   .image-container img {
+    background-color: #f6ecdf;
     position: absolute;
     top: 0;
     left: 0;
@@ -146,5 +162,5 @@ footer{
   
   .image-container img.active {
     opacity: 1;
+    background-color: #f6ecdf;
   }
- 

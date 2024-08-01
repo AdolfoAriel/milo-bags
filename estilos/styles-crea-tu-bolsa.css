@@ -35,12 +35,17 @@ a:hover {
 }
 
 .bag-preview {
-  margin-top: 20px;
+  padding: 30px;
+  margin: 40px;
+  
+
 }
 
-#bagImage {
-  max-width: 100%;
-  height: auto;
+.imagen-de-hilos{
+ border-radius: 25%;
+ border-color: #ab834d;
+ padding: 20px;
+ margin: 20px;
 }
 .color{
   max-width: 50%;
@@ -142,7 +147,7 @@ a:hover {
 footer{
   font-size: 14px;
   color: #ffffff;
-  background-color:#ab834d
+  background-color:#dccbb6
   ;
   margin-top: 5px;
   padding: 15px;
