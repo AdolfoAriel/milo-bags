@@ -118,58 +118,73 @@ a:hover {
   }
 }
 
-@media (max-width: 480px) {
-  .barra-de-navegacion {
-    padding: 15px;
-  }
 
-  .logo {
-    height: 2cm;
-  }
 
-  a {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-  .icono{
-    width: auto;
 
-  }
-  .icono img {
-    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
-    height: auto;
-  }
-}
+
+
+
+/* estilos de Sofia para el footer*/
+ /*footer*/
+
+hr {
+  height: 3px;
+  background-color: #664932;
+  border-color: #664932;
 }
 
+.rule {
 
+  margin-top: .5px;
 
-footer{
-  font-size: 14px;
-  color: #ffffff;
-  background-color:#dccbb6
-  ;
-  margin-top: 5px;
-  padding: 15px;
-  
 }
-.icono {
+
+.footer {
+  height: 20vh;
+  background: var(--dark-color)
+}
+
+.footer,
+.footer a {
+  color: var(--light-color);
+  font-size: 0.9;
+  height: 100px;
+}
+
+footer p {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+.footer {
+  display: grid;
+  margin-bottom: rem;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer li {
+  line-height: .5rem;
+  padding: 0 0.8rem;
+  margin-bottom: 5rem;
+}
+
+.icon {
   display: inline-block;
-  width: 40px; /* Ancho del icono */
-  height: 40px; /* Alto del icono */
-  overflow: hidden; /* Para recortar la imagen si es necesario */
-   /* Hacerlo circular si la imagen lo permite */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
   padding: 0%;
-  background-color: #ab834d;
-  border-color: #ab834d;
 }
 
-.icono img {
-  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+.icon img {
+  width: 100%;
   height: auto;
 }
+
 .icono:hover {
-  transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
-}
+  transform: scale(1.1);
+}}

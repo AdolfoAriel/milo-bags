@@ -35,3 +35,69 @@ footer{
   .icono:hover {
     transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
   }
+
+
+
+  /*footer*/
+
+hr {
+  height: 3px;
+  background-color: #664932;
+  border-color: #664932;
+}
+
+.rule {
+
+  margin-top: .5px;
+
+}
+
+.footer {
+  height: 20vh;
+  background: var(--dark-color)
+}
+
+.footer,
+.footer a {
+  color: var(--light-color);
+  font-size: 0.9;
+  height: 100px;
+}
+
+footer p {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+.footer {
+  display: grid;
+  margin-bottom: rem;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer li {
+  line-height: .5rem;
+  padding: 0 0.8rem;
+  margin-bottom: 5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+  padding: 0%;
+}
+
+.icon img {
+  width: 100%;
+  height: auto;
+}
+
+.icono:hover {
+  transform: scale(1.1);
+}

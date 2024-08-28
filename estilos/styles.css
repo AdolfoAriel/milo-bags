@@ -1,50 +1,9 @@
-.contenedor-principal{
-    background-color:white;
-    text-align: center;
-    
-}
-
-.links{
-  padding: 20px;
-}
-a{
-
-    text-decoration: none; /* Remove underline from links */
-  color: #40311d; /* Set text color */
-  font-size: 16px; /* Define font size */
-  padding: 10px 20px; /* Set button padding */
-  background-color: 
-  #f6ecdf
-
-  
-  ; /* Set background color */
-   /* Define button borders */
-  border-radius: 5px; /* Set rounded corners */
-}
-a:hover {
-    background-color: #7199c4; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
-  }
 
 
 
-.quienes-somos{
-  text-align: center;
-  color: #e6c79e;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 3cm;
-  padding: 40px;
-}
 
-.contenedor-secundario{
-    background-color: white;
-    text-align: center;
-}
-.titulo{
-  font-size: 70px;
-  color: whitesmoke;
-  padding: 0;
-}
+
+
 .barra-de-navegacion{
     background-color: #e6c79e;
     text-align: center;
@@ -52,115 +11,243 @@ a:hover {
     font-family:Tan Pearl;
 
 }
-@media (max-width: 480px) {
-  .barra-de-navegacion {
-    height: auto;
-    padding: 20px;
+a{
 
-  }
-  .imagenes-principales{
-    width: 50%;
-  }
-  .foto-del-patron{
-    width: 150px;
-    height: 10px;
-  }
-  .contenedor-principal{
-  width: auto;
-    padding: 20px;
-  }
+  text-decoration: none; /* Remove underline from links */
+color: #40311d; /* Set text color */
+font-size: 16px; /* Define font size */
+padding: 10px 20px; /* Set button padding */
+background-color: 
+#f6ecdf
+
+
+; /* Set background color */
+ /* Define button borders */
+border-radius: 5px; /* Set rounded corners */
+}
+a:hover {
+  background-color: #7199c4; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+
+
   
-  .contenedor-secundario{
-   width: auto;
-   
-  }
-  .texto{
-    width:auto;
-    margin: auto;
 
-    color: #0e6cd1;
-  }}
- 
+  /* estilos de la pagina principal, cambios hehcos por Sofia y agregados por Adolfo*/
 
 
-.foto-del-patron{
-   
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+:root {
+    --primary-color: #e6c79e;
+    --light-color: #f6f1ea;
+    --dark-color: #8a6b3f;
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*variales*/
+
+
+body {
     display: block;
-   padding-bottom: 3cm;
-    height: 30%; 
-    width: 30%;
+    background-color: var(--light-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    width: 100%;
 }
-.bienvenida{
-    padding: 8cm;
-    
+
+a {
+    color: black;
+    text-decoration: none;
 }
-.texto{
-  padding: 10%;
-    margin: auto;
-    width: auto;
-    font-size:xx-large;
+
+ul {
+    list-style: none;
 }
-footer{
-    font-size: 14px;
-    color: #ffffff;
-    background-color:#3f2f0e
-    ;
-    margin-top: 5px;
-    padding: 15px;
-    
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
 }
-.icono {
-    display: inline-block;
-    width: 40px; /* Ancho del icono */
-    height: 40px; /* Alto del icono */
-    overflow: hidden; /* Para recortar la imagen si es necesario */
-     /* Hacerlo circular si la imagen lo permite */
-   /* Sombra suave */
-    transition: transform 0.3s ease; /* Transición suave al hacer hover */
-    padding: 0%;
-    background-color: #3f2f0e;
-    border-color: #3f2f0e;
-    text-align: center;
 
-  }
-  
-  .icono img {
-    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
-    height: auto;
-  }
-  .icono:hover {
-    transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
-  }
+p {
+    margin: 0.5rem;
+}
 
+.header {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 1px 0px var(--dark-color);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    border-bottom: 2px solid var(--dark-color);
 
+}
 
-  /* IMAGENES DE LOS BORDADOS*/
-  .image-container {
-    position:relative;
-    width: 60%;
-    margin: auto;
-    height: 100vh; /* Tamaño completo de la ventana */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
-   background-color: #f6ecdf;
-  margin-bottom: 50px;
-  }
-  
-  .image-container img {
-    background-color: #f6ecdf;
+.header img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20%;
+    left: 50%;
+}
+
+.header a {
+    position: absolute;
+    top: -21%;
+    right: 98%;
+
+}
+
+.logo {
+    display: inline-block;
+    height: 115px;
+    text-align: center;
+    padding-left: 50%;
+    padding-right: 0;
+    margin-top: 15px;
+
+}
+
+.milo {
+    display: inline-block;
+    top: 50%;
+    left: 100%;
+    margin: 0 -4%;
+    margin-top: 20px;
+
+}
+
+/*hamb mennu*/
+
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    border-radius: 9999px;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after .hamburger-menu input {
+    content: "";
+    /**empty strings gives the bf and aftr elements content, which will show them up on the screen*/
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+}
+
+.hamburger-menu input {
+    appearance: none;
+
+}
+
+
+/*
+.nav {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
-    opacity: 0;
-    transition: opacity 1s ease; /* Transición suave de opacidad */
-  }
-  
-  .image-container img.active {
-    opacity: 1;
-    background-color: #f6ecdf;
-  }
+    position: fixed;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    padding: 0%;
+
+}
+/*
+carousel
+*/
+.carousel {
+    text-align: center;
+
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*footer*/
+
+hr {
+    height: 3px;
+    background-color: #664932;
+    border-color: #664932;
+}
+
+.rule {
+
+    margin-top: .5px;
+
+}
+
+.footer {
+    height: 20vh;
+    background: var(--dark-color)
+}
+
+.footer,
+.footer a {
+    color: var(--light-color);
+    font-size: 0.9;
+    height: 100px;
+}
+
+footer p {
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+.footer {
+    display: grid;
+    margin-bottom: rem;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer li {
+    line-height: .5rem;
+    padding: 0 0.8rem;
+    margin-bottom: 5rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+    padding: 0%;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.icono:hover {
+    transform: scale(1.1);
+}
