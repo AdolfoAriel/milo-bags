@@ -9,11 +9,16 @@ p{
 footer{
     font-size: 14px;
     color: #ffffff;
-    background-color:#ab834d
-    ;
+    background-color:#ab834d;
     margin-top: 5px;
     padding: 15px;
     
+}
+
+
+
+.texto-money{
+  font-size: 40px;
 }
 .icono {
     display: inline-block;
@@ -54,8 +59,8 @@ hr {
 
 .footer {
   height: 20vh;
-  background: var(--dark-color)
-}
+  background: var(--dark-color);
+  
 
 .footer,
 .footer a {
@@ -101,3 +106,23 @@ footer li {
 .icono:hover {
   transform: scale(1.1);
 }
+
+/* estilos de los links*/
+a{
+
+  text-decoration: none; /* Remove underline from links */
+color: #40311d; /* Set text color */
+font-size: 16px; /* Define font size */
+padding: 10px 20px; /* Set button padding */
+background-color: 
+#f6ecdf
+
+
+; /* Set background color */
+ /* Define button borders */
+border-radius: 5px; /* Set rounded corners */
+}
+a:hover {
+  background-color: #7199c4; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}}
