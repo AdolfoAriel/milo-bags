@@ -7,7 +7,7 @@
 .barra-de-navegacion{
     background-color: #e6c79e;
     text-align: center;
-    
+    padding: 1%;
     font-family:Tan Pearl;
 
 }
@@ -197,15 +197,13 @@ hr {
 }
 
 .rule {
-
     margin-top: .5px;
-
 }
 
 .footer {
     height: 20vh;
-    background: var(--dark-color)
-}
+    background: var(--dark-color);
+
 
 .footer,
 .footer a {
@@ -250,4 +248,4 @@ footer li {
 
 .icono:hover {
     transform: scale(1.1);
-}
+}}
