@@ -15,10 +15,14 @@ footer{
     
 }
 
-
+.Formas-de-pago{
+  margin: 2cm;
+}
 
 .texto-money{
   font-size: 40px;
+  padding: 1cm;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .icono {
     display: inline-block;
