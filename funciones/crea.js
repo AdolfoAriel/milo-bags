@@ -82,3 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Establecer una imagen predeterminada
   colorSelect2.dispatchEvent(new Event('change'));
 });
+
+// enviar mensaje
+function enviarWhatsApp() {
+  const color1 = document.getElementById("colorSelect").value;
+  const color2 = document.getElementById("colorSelect2").value;
+
+  const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n- Color 1: ${color1}\n- Color 2: ${color2}`;
+
+  const numero = "1234567890"; // Reemplaza con el número de teléfono
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+}

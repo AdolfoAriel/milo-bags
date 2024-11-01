@@ -18,7 +18,7 @@
 </head>
 <body>
     <nav class="header">
-        <a href="http://127.0.0.1:3000/main.html"> <img class="logo" src="/imagenes/DogIcon.png"
+        <a href="/index.html"> <img class="logo" src="/imagenes/DogIcon.png"
                 alt="MiloBags logo"></a>
         <img class="milo" src="/imagenes/Milo.png" alt="MiloBags slogan" height="100">
 
@@ -112,10 +112,13 @@
           <img class="imagen-de-hilos" id="imagen" src="" alt="Imagen del color seleccionado">
           <img class="imagen-de-hilos" id="imagen2" src="" alt="Imagen del color seleccionado">
       </div>
-        
+      <br>
+      <button class="btn-whatsapp"  type="button" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
 
     </div>
-    <h1 class="texto-principal">Una vez que hayas escogido tu combiancion ideal, mandame un mensajito a mi contacto que vienen debajo</h1>
+    
+
+    <h1 class="texto-principal">Una vez que hayas escogido tu combiancion ideal, solo da click en el botón verde y me mandara un mensaje con tu opción elegida</h1>
 
     <footer class="footer">
         <p>¿Dudas? Llama a: 223-125-5251 </p>
@@ -138,7 +141,21 @@
 
 
     
-    <script src="/funciones/crea.js"></script>
+    <script src="/funciones/crea.js">
+
+function enviarWhatsApp() {
+            const color1 = document.getElementById("colorSelect").value;
+            const color2 = document.getElementById("colorSelect2").value;
+
+            const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n- Color 1: ${color1}\n- Color 2: ${color2}`;
+
+            const numero = "1234567890"; // Reemplaza con el número de teléfono
+            const url = `https://wa.me/${5212231255251}?text=${encodeURIComponent(mensaje)}`;
+
+            window.open(url, "_blank");
+        }
+    
+    </script>
 </body>
 <script src="/funciones/crea.js"></script>
 </html>

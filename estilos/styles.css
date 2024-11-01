@@ -200,38 +200,31 @@ hr {
     margin-top: .5px;
 }
 
-.footer {
-    height: 20vh;
-    background: var(--dark-color);
 
 
-.footer,
-.footer a {
-    color: var(--light-color);
-    font-size: 0.9;
-    height: 100px;
+
+footer{
+    font-size: 24px;
+    color: #ffffff;
+    background-color:#ab834d;
+    margin-top: 5px;
+    padding: 15px;
+   
 }
 
+footer.footer{
+    height: auto;
+}
 footer p {
     margin-bottom: .5rem;
     padding: .5rem;
-}
-
-.footer {
-    display: grid;
-    margin-bottom: rem;
-}
-
+  }
+ 
 .footer-cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-footer li {
-    line-height: .5rem;
-    padding: 0 0.8rem;
-    margin-bottom: 5rem;
-}
 
 .icon {
     display: inline-block;
@@ -248,4 +241,4 @@ footer li {
 
 .icono:hover {
     transform: scale(1.1);
-}}
+}

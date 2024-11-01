@@ -38,6 +38,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
  border-color: #ab834d;
  margin: 20px;
 }
+.imagen-de-hilos:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+}
 .color{
   max-width: 50%;
   height: auto;
@@ -46,3 +58,44 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 
 
+footer{
+  font-size: 14px;
+  color: #ffffff;
+  background-color:#ab834d;
+  margin-top: 5px;
+  padding: 15px;
+   
+}
+footer.footer{
+  height: auto;
+}footer p {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+footer li {
+  line-height: .5rem;
+  padding: 0 0.8rem;
+  margin-bottom: 5rem;
+}
+
+/* boton*/
+ .btn-whatsapp {
+  background-color: #25D366; /* Verde de WhatsApp */
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1EBE5B; /* Verde más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-whatsapp:active {
+  transform: translateY(1px); /* Ligeramente hacia abajo al hacer clic */
+}
