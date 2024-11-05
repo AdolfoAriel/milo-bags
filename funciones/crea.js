@@ -95,3 +95,14 @@ function enviarWhatsApp() {
 
   window.open(url, "_blank");
 }
+
+
+
+function enviarWhatsApp() {
+  const color1 = document.getElementById("colorSelect").value;
+  const color2 = document.getElementById("colorSelect2").value;
+
+  const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n-  ${color1} y \n-  ${color2}`;
+  const url = `https://api.whatsapp.com/5212231255251?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+};
