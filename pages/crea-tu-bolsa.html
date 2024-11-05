@@ -24,28 +24,6 @@
         <aside class="sidebar">   
         </aside>
         
-        <!--    
-           
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-        <nav class="nav">
-
-            <ul class="menu">
-                <a href="">
-                    <li>Crea tu bolsa</li>
-                </a>
-                <a href="">
-                    <li>Métodos de pago</li>
-                </a>
-                <a href="">
-                    <li>Nuestra historia</li>
-                </a>
-            </ul>
-        </nav>-->
     </nav>
       
     <div class="barra-de-navegacion">
@@ -68,7 +46,6 @@
               <option value="Durazno">Durazno</option>
               <option value="Ivory">Ivory</option>
               <option value="Lila">Lila</option>
-              <option value="Listonsuelto">Listón suelto</option>
               <option value="Magenta">Magenta</option>
               <option value="Mostaza">Mostaza</option>
               <option value="Nude">Nude</option>
@@ -93,7 +70,6 @@
             <option value="Durazno">Durazno</option>
             <option value="Ivory">Ivory</option>
             <option value="Lila">Lila</option>
-            <option value="Listonsuelto">Listón suelto</option>
             <option value="Magenta">Magenta</option>
             <option value="Mostaza">Mostaza</option>
             <option value="Nude">Nude</option>
@@ -138,22 +114,6 @@
         </div>
     </footer>
 
-
-    
-    <script>
-        function enviarWhatsApp() {
-            const color1 = document.getElementById("colorSelect").value;
-            const color2 = document.getElementById("colorSelect2").value;
-
-            const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n- Color 1: ${color1}\n- Color 2: ${color2}`;
-            const numero = "5212231255251";
-
-            const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
-
-            console.log("URL generada:", url); // Para verificar el enlace en la consola
-            window.open(url, "_blank");
-        }
-    </script>
     <script src="/funciones/crea.js"></script>
 </body>
 </html>

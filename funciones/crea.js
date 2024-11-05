@@ -97,12 +97,15 @@ function enviarWhatsApp() {
 }
 
 
-
 function enviarWhatsApp() {
   const color1 = document.getElementById("colorSelect").value;
   const color2 = document.getElementById("colorSelect2").value;
 
-  const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n-  ${color1} y \n-  ${color2}`;
-  const url = `https://api.whatsapp.com/5212231255251?text=${encodeURIComponent(mensaje)}`;
+  const mensaje = `Hola! Me gustaría personalizar mi bolsa con los siguientes colores:\n- Color 1: ${color1}\n- Color 2: ${color2}`;
+  const numero = "5212231255251";
+
+  const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
+
+  console.log("URL generada:", url); // Para verificar el enlace en la consola
   window.open(url, "_blank");
-};
+}
