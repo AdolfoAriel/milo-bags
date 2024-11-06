@@ -66,8 +66,7 @@ a:hover {
 
 
 body {
-    display: block;
-    background-color: var(--light-color);
+   background-color: var(--light-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 auto;
     width: 100%;
@@ -96,7 +95,7 @@ p {
 .header {
     background-color: var(--primary-color);
     box-shadow: 1px 1px 1px 0px var(--dark-color);
-    position: sticky;
+    position:relative;
     top: 0px;
     width: 100%;
     height: 100px;
@@ -140,26 +139,6 @@ p {
 /*hamb mennu*/
 
 
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    border-radius: 9999px;
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after .hamburger-menu input {
-    content: "";
-    /**empty strings gives the bf and aftr elements content, which will show them up on the screen*/
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--foreground);
-}
-
-.hamburger-menu input {
-    appearance: none;
-
-}
 
 
 
@@ -208,8 +187,7 @@ footer{
     color: #ffffff;
     background-color:#ab834d;
     margin-top: 5px;
-    padding: 15px;
-   
+       
 }
 
 footer.footer{
@@ -246,11 +224,11 @@ footer p {
 
 /* estilos carrousel */
 .carousel {
-    overflow: hidden;
+    overflow:hidden;
     width: 80%;
-    max-width: 600px;
+    max-width: 75%;
     margin: auto;
-    position: relative;
+    position:static;
 }
 
 .carousel ul {

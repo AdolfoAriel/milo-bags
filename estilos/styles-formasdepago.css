@@ -1,110 +1,53 @@
-p{
-    text-align: center;
-    font-size: medium;
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Estilos generales */
+p {
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-footer{
-    font-size: 14px;
-    color: #ffffff;
-    background-color:#ab834d;
-    margin-top: 5px;
-    padding: 15px;
-     
-}
-footer.footer{
+footer {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ab834d;
+  margin-top: 5px;
+  padding: 15px;
   height: auto;
 }
-.Formas-de-pago{
-  margin: 2cm;
-}
-
-.texto-money{
-  font-size: 40px;
-  padding: 1cm;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.icono {
-    display: inline-block;
-    width: 40px; /* Ancho del icono */
-    height: 40px; /* Alto del icono */
-    overflow: hidden; /* Para recortar la imagen si es necesario */
-     /* Hacerlo circular si la imagen lo permite */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    transition: transform 0.3s ease; /* Transición suave al hacer hover */
-    padding: 0%;
-    background-color: #ab834d;
-    border-color: #ab834d;
-  }
-  
-  .icono img {
-    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
-    height: auto;
-  }
-  .icono:hover {
-    transform: scale(1.1); /* Efecto de escalar un poco al hacer hover */
-  }
-
-
-
-  /*footer*/
 
 hr {
   height: 3px;
   background-color: #664932;
-  border-color: #664932;
+  border: none;
 }
 
 .rule {
-
   margin-top: .5px;
-
 }
 
-.footer {
-  height: 20vh;
-  background: var(--dark-color);
-  
-
-.footer,
-.footer a {
-  color: var(--light-color);
-  font-size: 0.9;
-  height: 100px;
+.Formas-de-pago {
+  margin: 2cm;
 }
 
-footer p {
-  margin-bottom: .5rem;
-  padding: .5rem;
-}
-footer li {
-  line-height: .5rem;
-  padding: 0 0.8rem;
-  margin-bottom: 5rem;
-}
-.footer {
-  display: grid;
-  margin-bottom: rem;
-}
-
-.footer-cols {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.texto-money {
+  font-size: 40px;
+  padding: 1cm;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
-
-.icon {
+.icono {
   display: inline-block;
   width: 40px;
   height: 40px;
-  transition: transform 0.5s ease;
-  padding: 0%;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  background-color: #ab834d;
+  border-color: #ab834d;
 }
 
-.icon img {
+.icono img {
   width: 100%;
   height: auto;
 }
@@ -113,22 +56,69 @@ footer li {
   transform: scale(1.1);
 }
 
-/* estilos de los links*/
-a{
-
-  text-decoration: none; /* Remove underline from links */
-color: #40311d; /* Set text color */
-font-size: 16px; /* Define font size */
-padding: 10px 20px; /* Set button padding */
-background-color: 
-#f6ecdf
-
-
-; /* Set background color */
- /* Define button borders */
-border-radius: 5px; /* Set rounded corners */
+a {
+  text-decoration: none;
+  color: #40311d;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #f6ecdf;
+  border-radius: 5px;
 }
+
 a:hover {
-  background-color: #7199c4; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
-}}
+  background-color: #7199c4;
+  color: #fff;
+}
+
+/* Diseño del footer para diferentes dispositivos */
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  .footer-cols {
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .Formas-de-pago {
+      margin: 1cm;
+  }
+
+  .texto-money {
+      font-size: 30px;
+  }
+
+  footer {
+      padding: 20px;
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+      font-size: large;
+  }
+
+  .Formas-de-pago {
+      margin: 0.5cm;
+  }
+
+  .texto-money {
+      font-size: 35px;
+  }
+
+  .footer {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-cols {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+body{
+  height: 100%;
+}
