@@ -30,7 +30,7 @@ body {
 }
 .texto-principal{
 padding: 120px;
-font-size: 40px;
+font-size: auto;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 .imagen-de-hilos{
