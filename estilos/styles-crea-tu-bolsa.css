@@ -23,8 +23,9 @@ body {
   text-align: center;
 }
 .bag-preview {
-  padding: 30px;
-  margin: 40px;
+  padding: 10px;
+  margin: 10px;
+ 
   
 
 }
@@ -37,9 +38,27 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
  border-radius: 70%;
  border-color: #ab834d;
  margin: 20px;
+ 
+
 }
 .imagen-de-hilos:hover {
   animation: pulse 1s infinite;
+}
+@media (max-width: 800px) {
+.texto-principal{
+font-size: 20px;
+padding: 60px;
+}
+.imagen-de-hilos{
+width: 75%;
+height: 75%;
+height: 10px;}
+#colorSelect, #colorSelect2{
+  font-size: 20px;
+  text-align: center;
+  
+}
+
 }
 
 @keyframes pulse {
@@ -49,6 +68,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
   50% {
       transform: scale(1.05);
   }
+
 }
 .color{
   max-width: 50%;
@@ -90,6 +110,8 @@ footer li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.3s;
 }
+
+
 
 .btn-whatsapp:hover {
   background-color: #1EBE5B; /* Verde más oscuro al pasar el ratón */
