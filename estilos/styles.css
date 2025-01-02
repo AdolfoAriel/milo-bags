@@ -12,24 +12,25 @@
 
 }
 a{
-
   text-decoration: none; /* Remove underline from links */
 color: #40311d; /* Set text color */
-font-size: 16px; /* Define font size */
-padding: 10px 20px; /* Set button padding */
-background-color: 
-#f6ecdf
-
-
-; /* Set background color */
- /* Define button borders */
-border-radius: 5px; /* Set rounded corners */
+font-size: 25px; /* Define font size */
+padding: 12px;
+margin: 10px; 
+/* Set button padding */
+background-color:#f6ecdf;
+border-radius: 70px; /* Set rounded corners */
 }
 a:hover {
   background-color: #7199c4; /* Change background color on hover */
   color: #fff; /* Change text color on hover */
 }
-
+@media (max-width: 800px) {
+a {
+    font-size: 15px;
+    padding: 3px;
+    margin: 7px; 
+}}
 
 
   
@@ -72,13 +73,9 @@ body {
     width: 100%;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
 ul {
-    list-style: none;
+    list-style:none;
 }
 
 h1,
@@ -163,7 +160,7 @@ carousel
 
 .carousel img {
     width: 100%;
-    height: auto;
+    
 }
 
 
@@ -189,32 +186,40 @@ footer{
     margin-top: 5px;
        
 }
-
-footer.footer{
-    height: auto;
+@media (max-width: 800px) {
+    footer {
+       font-size: 15px;
+       text-align: center;
+    }
 }
+    
+    
+
+
 footer p {
-    margin-bottom: .5rem;
-    padding: .5rem;
+    display:inline-flexbox;
+        padding-top: .5rem;
+    text-align: center;
   }
  
 .footer-cols {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display:flex;
+    margin-left: 50%;
+
 }
 
 
 .icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.5s ease;
-    padding: 0%;
+
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    margin-left: 10px;
 }
 
-.icon img {
-    width: 100%;
-    height: auto;
+.icon img {text-align: center;
+    width: 20px;
+    height: 20px;
 }
 
 .icono:hover {
@@ -225,8 +230,8 @@ footer p {
 /* estilos carrousel */
 .carousel {
     overflow:hidden;
-    width: 80%;
-    max-width: 75%;
+    width: 100%;
+    max-width: 80%;
     margin: auto;
     position:static;
 }
@@ -246,5 +251,15 @@ footer p {
 
 .carousel-itemt img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0px;
 }
+@media (max-width: 800px) {
+    .carousel {
+        overflow:hidden;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        position:static;
+    }
+       
+}   
