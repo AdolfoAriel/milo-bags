@@ -7,7 +7,7 @@
 .barra-de-navegacion{
     background-color: #e6c79e;
     text-align: center;
-    padding: 1%;
+    padding: 30px;
     font-family:Tan Pearl;
 
 }
@@ -30,7 +30,11 @@ a {
     font-size: 15px;
     padding: 3px;
     margin: 7px; 
-}}
+}
+.barra-de-navegacion{
+    padding: 15px;
+}
+}
 
 
   
@@ -254,8 +258,8 @@ footer p {
         overflow:hidden;
         width: 100%;
         max-width: 100%;
-        margin: auto;
         position:static;
+        
     }
        
 }   
