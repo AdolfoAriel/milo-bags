@@ -55,14 +55,17 @@ padding: 60px;
 font-weight: 100;
 } 
 .imagen-de-hilos{
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
+  margin: 10px;
 }
-
+.color-selector{
+  margin-bottom: 10px;
+}
 .color-selector label{
 font-size: 18px;
 padding: 15px;
-margin: 10px;
+margin: 8px;
 }
 #colorSelect, #colorSelect2{
   font-size: 18px;
