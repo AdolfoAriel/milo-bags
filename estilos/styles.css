@@ -184,6 +184,7 @@ footer{
     color: #ffffff;
     background-color:#ab834d;
     margin-top: 5px;
+
        
 }
 @media (max-width: 800px) {
@@ -191,6 +192,7 @@ footer{
        font-size: 15px;
        text-align: center;
     }
+   
 }
     
     
@@ -200,26 +202,20 @@ footer p {
     display:inline-flexbox;
         padding-top: .5rem;
     text-align: center;
+    padding: 20px;
   }
  
 .footer-cols {
     display:flex;
-    margin-left: 50%;
-
+   justify-content: center;
+   padding: 30px;
 }
 
 
-.icon {
-
-    width: 20px;
-    height: 20px;
-    padding: 4px;
-    margin-left: 10px;
-}
-
-.icon img {text-align: center;
-    width: 20px;
-    height: 20px;
+.icon img {
+   justify-content: center;
+    width: 26px;
+    height: 26px;
 }
 
 .icono:hover {
