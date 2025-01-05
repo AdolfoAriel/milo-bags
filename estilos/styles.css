@@ -31,9 +31,17 @@ a {
     padding: 3px;
     margin: 7px; 
 }
+.header a {
+    position: absolute;
+    top: -30%;
+    right:22%;
+
+}
 .barra-de-navegacion{
     padding: 15px;
 }
+
+
 }
 
 
@@ -97,10 +105,10 @@ p {
     background-color: var(--primary-color);
     box-shadow: 1px 1px 1px 0px var(--dark-color);
     position:relative;
-    top: 0px;
-    width: 100%;
+   width: 100%;
     height: 100px;
-    margin-top: 0px;
+    
+   
     border-bottom: 2px solid var(--dark-color);
 
 }
@@ -108,13 +116,13 @@ p {
 .header img {
     position: absolute;
     top: -20%;
-    left: 50%;
+
 }
 
 .header a {
     position: absolute;
-    top: -21%;
-    right: 98%;
+    top: -30%;
+    right: 57%;
 
 }
 
@@ -129,10 +137,8 @@ p {
 }
 
 .milo {
-    display: inline-block;
-    top: 50%;
-    left: 100%;
-    margin: 0 -4%;
+    
+   justify-content: center;
     margin-top: 20px;
 
 }
